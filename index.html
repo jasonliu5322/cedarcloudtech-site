@@ -69,6 +69,8 @@ h3{margin:0 0 6px;font-size:19px;letter-spacing:-.01em}
 
 .brands{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;padding:18px 0}
 .brands .wrap{display:flex;gap:10px 30px;flex-wrap:wrap;align-items:center;color:var(--muted);font-weight:700;font-size:15px}
+.brandrows{display:grid;gap:14px}
+.brow{display:grid;grid-template-columns:230px 1fr;gap:14px;align-items:center}
 .chips2{display:flex;flex-wrap:wrap;gap:10px}
 .chips2 span{padding:8px 18px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-weight:800;font-size:15px;letter-spacing:.01em}
 .brands b{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.1em;color:var(--ink)}
@@ -156,6 +158,7 @@ footer .brand{color:var(--ink);margin-bottom:14px}
   .src{grid-template-columns:1fr 1fr}
 }
 @media (max-width:860px){
+  .brow{grid-template-columns:1fr;gap:8px}
   .nitem{grid-template-columns:1fr;gap:6px}
   .hero-grid,.sell,.row,.band,.fgrid{grid-template-columns:1fr}
   .row:nth-child(even) .shot{order:0}
@@ -246,7 +249,10 @@ footer .brand{color:var(--ink);margin-bottom:14px}
   </section>
 
   <div class="brands">
-    <div class="wrap"><b>HARDWARE WE HANDLE</b><div class="chips2"><span>Dell</span><span>HP</span><span>HPE</span><span>Supermicro</span><span>Lenovo</span><span>Cisco</span><span>Intel</span><span>AMD</span><span>NVIDIA</span></div></div>
+    <div class="wrap brandrows">
+      <div class="brow"><b>SERVERS, PCs &amp; NETWORKING</b><div class="chips2"><span>Dell</span><span>HP</span><span>HPE</span><span>Supermicro</span><span>Lenovo</span><span>Cisco</span><span>Intel</span><span>AMD</span><span>NVIDIA</span></div></div>
+      <div class="brow"><b>MEMORY &amp; STORAGE</b><div class="chips2"><span>Samsung</span><span>SK hynix</span><span>Micron</span><span>SanDisk</span><span>Seagate</span><span>Western Digital</span><span>Kioxia</span><span>Toshiba</span><span>Kingston</span><span>Solidigm</span></div></div>
+    </div>
   </div>
 
   <section class="pad">
@@ -542,7 +548,7 @@ footer .brand{color:var(--ink);margin-bottom:14px}
       <div><h4>Pages</h4><a href="#home">Home</a><a href="#parts">Parts &amp; Systems</a><a href="#about">About Us</a><a href="#news">News</a><a href="#sell">Sell to Us</a></div>
       <div><h4>Contact</h4><a href="mailto:admin@cedarcloudtech.com">admin@cedarcloudtech.com</a><a href="tel:+14088007880">(408) 800-7880</a><span style="font-size:14.5px">San Jose, California</span></div>
     </div>
-    <div class="legal">© 2026 Cedar Cloud Technologies. Dell, HPE, Supermicro, Lenovo, Cisco, Intel, AMD, NVIDIA and other names are trademarks of their respective owners; Cedar Cloud Technologies is not affiliated with them. Images are illustrations.</div>
+    <div class="legal">© 2026 Cedar Cloud Technologies. All brand names mentioned on this site, including Dell, HPE, Supermicro, Lenovo, Cisco, Intel, AMD, NVIDIA, Samsung, SK hynix, Micron, SanDisk, Seagate and Western Digital, are trademarks of their respective owners; Cedar Cloud Technologies is not affiliated with them. Images are illustrations.</div>
   </div>
 </footer>
 
